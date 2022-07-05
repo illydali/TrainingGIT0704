@@ -6,6 +6,7 @@
   - https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html#license-lightbox
   - https://download.springsource.com/release/STS4/4.15.1.RELEASE/dist/e4.24/spring-tool-suite-4-4.15.1.RELEASE-e4.24.0-win32.win32.x86_64.self-extracting.jar
 - https://git-scm.com/download/win
+- https://docs.oracle.com/javase/8/docs/api/
 
 :writing_hand: **_Welcome Program_**  
 
