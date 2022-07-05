@@ -7,7 +7,8 @@ import com.ezshop.model.Product;
 public class EzshopApp {
 public static void main(String[] args) {
 	System.err.println("Welcome to Ezshop");
-	addProduct();
+//	addProduct();
+	addProductsToArray();
 }
 
 private static void addProduct() {
@@ -41,5 +42,21 @@ private static void addProduct() {
 	
 	Product product1 = new Product(iSBN,title,author,noOfPages,available);
 	product1.getDetails();
+}
+private static void addProductsToArray() {
+
+	
+	//create new product
+	Product product1 = new Product("ISBN1", "SWY", "SIMON");
+	
+	Product product2 =  new Product("ISBN1", "SWY", "SIMON",(short)50,true);
+	
+	Product products[] = new Product[2];
+	products[0] = product1;
+	products[1] = product2;
+	
+	products[0].getDetails();
+	products[1].getDetails();
+	
 }
 }
