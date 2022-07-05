@@ -1,4 +1,4 @@
-// IP : 
+package com.demo.basics;
 public class App {
 	public static void main(String[] args) {
 		// access static method

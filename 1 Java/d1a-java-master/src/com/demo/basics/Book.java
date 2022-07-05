@@ -1,3 +1,4 @@
+package com.demo.basics;
 // create class
 public class Book {
 //	The default visibility is known as “package-private” 

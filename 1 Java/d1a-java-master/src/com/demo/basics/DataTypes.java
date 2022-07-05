@@ -1,3 +1,4 @@
+package com.demo.basics;
 //IP : tryout different wrapper types and conversions
 public class DataTypes {
 	public static void main(String[] args) {
