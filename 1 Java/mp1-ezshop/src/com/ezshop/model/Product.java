@@ -1,6 +1,6 @@
 package com.ezshop.model;
 //create class
-public class Product {
+public class Product extends Object{
 //	The default visibility is known as “package-private” 
 //	(though you can't use this explicitly), 
 //	which means the field will be accessible from inside 
@@ -28,10 +28,10 @@ public class Product {
 		available = pavailable;
 	}
 	public void getDetails() {
-		System.err.println(iSBN);
-		System.err.println(title);
-		System.err.println(author);
-		System.err.println(noOfPages);
+		System.err.print(iSBN + "\t");
+		System.err.print(title+ "\t");
+		System.err.print(author+ "\t");
+		System.err.print(noOfPages+ "\t");
 		System.err.println(available);
 	}
 }
