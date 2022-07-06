@@ -10,6 +10,7 @@ public class ArrayListObjectEx {
 //		Integer integer = 500;
 //		objectList.add(integer);
 		objectList.add(500);
+		objectList.add(true);
 		System.out.println(objectList);
 
 //		for (String colorString : colors) {
