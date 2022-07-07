@@ -8,6 +8,36 @@ public class Product extends Object{
 //	fields
 //	static String site = "Amazon"; //null
 	String iSBN; // null
+	public String getiSBN() {
+		return iSBN;
+	}
+	public void setiSBN(String iSBN) {
+		this.iSBN = iSBN;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public short getNoOfPages() {
+		return noOfPages;
+	}
+	public void setNoOfPages(short noOfPages) {
+		this.noOfPages = noOfPages;
+	}
+	public boolean isAvailable() {
+		return available;
+	}
+	public void setAvailable(boolean available) {
+		this.available = available;
+	}
 	String title; // null
 	String author; // null
 	short noOfPages; // 0
