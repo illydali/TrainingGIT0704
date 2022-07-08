@@ -12,6 +12,13 @@
 5. Polymorphism
 6. Abstraction
 
+:beginner: _**Exception Handling**_  
+1. try
+2. catch
+3. java.lang.Exception and it's derived classes
+
+:beginner: _**Collections**_  
+- ArrayList
 
 :writing_hand: **_Exploration_**  
 - Waterfall vs Agile methodologies
