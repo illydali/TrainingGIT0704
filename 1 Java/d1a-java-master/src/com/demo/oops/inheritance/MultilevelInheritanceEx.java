@@ -25,3 +25,6 @@ class SmartPhone1 extends FeaturePhone1 {
 		System.out.println("Press the soft keys");
 	}
 }
+
+
+// The relationship in inheritance 'IS-A'
