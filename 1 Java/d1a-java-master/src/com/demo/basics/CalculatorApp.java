@@ -1,6 +1,10 @@
 package com.demo.basics;
 
 // IP try out different primitive datatypes
+// try out overloading 
+// function signature should vary
+// no / order / datatype
+//   add(int, int), add(float,float), add(int, float), add(float, int), add (double,float), add(int, int,int)
 public class CalculatorApp {
 	// overloaded method
 	static void add(int num1, float num2) {
