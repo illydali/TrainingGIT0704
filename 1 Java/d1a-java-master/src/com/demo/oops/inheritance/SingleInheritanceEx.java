@@ -1,14 +1,14 @@
-package com.demo.oops;
+package com.demo.oops.inheritance;
 
-public class InheritanceEx {
+public class SingleInheritanceEx {
 
 }
-
 
 class Phone {
 	public void dial() {
 		System.out.println("Rotating the disc mechanically");
 	}
+
 	public void hearRingTone() {
 		System.out.println("Tring tring");
 	}
