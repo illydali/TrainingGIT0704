@@ -1,3 +1,4 @@
+// abstract demo
 package com.demo.oops;
 
 public class AbstractionWithAbstractClassEx {
