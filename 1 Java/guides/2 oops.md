@@ -5,12 +5,12 @@
 
 
 :beginner: _**OOPS**_  
-1. Classes [a spefication of blueprint for creating objects] (methods/functions/procedures/sub-routines and fields/variables/properties)
+1. Classes [a spefication of blueprint for creating objects] (methods/functions/procedures/sub-routines and fields/variables/properties) [concrete class / abstract class]
 2. Objects [an occurance or instance of a class]
 3. Encapsulation [Class hides varaiables/methods]
-4. Inhiertance
+4. Inhiertance [one class obtaining the features of another class / reusability]
 5. Polymorphism
-6. Abstraction
+6. Abstraction / [focussing on the essentials / abstract class purpose is inheritance / cannot be instantiated]
 
 :beginner: _**Exception Handling**_  
 1. try
