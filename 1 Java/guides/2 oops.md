@@ -9,7 +9,7 @@
 2. Objects [an occurance or instance of a class]
 3. Encapsulation [Class hides varaiables/methods]
 4. Inhiertance [one class obtaining the features of another class / reusability]
-5. Polymorphism
+5. Polymorphism / [method overloading / method overriding]
 6. Abstraction / [focussing on the essentials / abstract class purpose is inheritance / cannot be instantiated]
 
 :beginner: _**Exception Handling**_  

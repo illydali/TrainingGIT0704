@@ -1,6 +1,6 @@
 package com.demo.oops;
 
-public class AbstractionWithAbstractClassEx {
+public class AbstractionWithInterfaceEx2 {
 	public static void main(String[] args) {
 //	Account account = null;
 //	Cannot instantiate the type Account
@@ -22,7 +22,9 @@ public class AbstractionWithAbstractClassEx {
 	}
 }
 
-abstract class Account {
+
+
+abstract class Account11 {
 	// Abstract classes represent abstract concepts of ideas.
 	// abstract class can have abstract methods and concrete methods (methods with
 	// body)
@@ -37,7 +39,7 @@ abstract class Account {
 
 // inherit the abstract class
 // SavingsAccount is a Account
-class SavingsAccount extends Account {
+class SavingsAccount11 extends Account {
 //	override the abstract method
 	@Override
 	public void dispalyAccountInfo() {
