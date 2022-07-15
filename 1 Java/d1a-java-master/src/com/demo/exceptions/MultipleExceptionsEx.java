@@ -25,6 +25,7 @@ public class MultipleExceptionsEx {
 		}
 		catch (Throwable exception) {
 			System.err.println("All exceptions (which are not handled above)");
+			System.err.println(exception);
 		}
 	}
 }
