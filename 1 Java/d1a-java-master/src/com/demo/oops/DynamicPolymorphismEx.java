@@ -8,7 +8,8 @@ public class DynamicPolymorphismEx {
 
 	private static void useInterfaceReference() {
 //	Dynamic polymorphism
-		Book philosophersStone = null;
+//		Book philosophersStone = null;
+		Book philosophersStone;
 //	philosophersStone.viewDetails();
 		if (Math.random() > 0.7)
 			philosophersStone = new AudioBook();
@@ -21,6 +22,7 @@ public class DynamicPolymorphismEx {
 		philosophersStone.getTitle();
 	}
 
+	
 	private static void useClassReference() {
 		AudioBook philosophersStone = null;
 //	philosophersStone.viewDetails();
