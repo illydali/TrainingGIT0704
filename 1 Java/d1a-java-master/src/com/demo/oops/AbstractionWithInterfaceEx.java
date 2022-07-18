@@ -6,10 +6,11 @@ public class AbstractionWithInterfaceEx {
 //	Cannot instantiate the type Account
 //	account = new Account();
 
-		SavingsAccount savingsAccount = new SavingsAccount();
-		savingsAccount.displayBankDetails();
-		savingsAccount.dispalyAccountInfo();
-		savingsAccount.withdraw();
+		SavingsAccount1 savingsAccount1 = new SavingsAccount1();
+		savingsAccount1.dispalyAccountInfo();
+		savingsAccount1.withdraw();
+		savingsAccount1.transferAmount();
+		savingsAccount1.checkAccountBalance();
 
 		System.out.println("******************");
 		
