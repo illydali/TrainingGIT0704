@@ -1,7 +1,7 @@
 package com.demo.basics;
 public class SwitchCase {
 	public static void main(String[] args) {
-		int day = 20;
+		int day = 2;
 		switch (day) {
 		default:
 		System.out.println("Not a valid day");
