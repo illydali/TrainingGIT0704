@@ -6,7 +6,7 @@ import java.util.Map;
 import com.flyhigh.model.Flight;
 import com.flyhigh.model.FlightClassEnum;
 
-public class FlightDataStub {
+public class FlightDataHashMapStub {
 	final static Map<String,Flight> flightDataMap = new HashMap<String,Flight>();
 	private static void loadSampleFlightData() {
        Flight flightSGP = new Flight("SQ-525", 210, FlightClassEnum.ECONOMY);

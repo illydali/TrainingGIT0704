@@ -5,7 +5,9 @@ import java.util.Map;
 import java.util.Scanner;
 
 import com.flyhigh.model.Flight;
-import com.flyhigh.repository.FlightDataStub;
+import com.flyhigh.model.FlightClassEnum;
+import com.flyhigh.repository.FlightDataFile;
+import com.flyhigh.repository.FlightDataHashMapStub;
 
 public enum FleetMenuUtil {
 //	constants with values
@@ -42,11 +44,21 @@ public enum FleetMenuUtil {
 
 		switch (choice) {
 		case 1:
-			Map<String, Flight> flightDataMap = FlightDataStub.getFlightDataMap();
+			Map<String, Flight> flightDataMap = FlightDataHashMapStub.getFlightDataMap();
+//			form collection
+			System.out.println("FROM Collection");
 			Collection<Flight> flightsCollection = flightDataMap.values();
+//			form file
+			System.out.println("FROM File");
 			for (Flight flight : flightsCollection) {
 				System.err.println(flight);
 			}
+			Flight flight = FlightDataFile.fetchFlightData();
+			System.err.println(flight);
+			break;
+		case 2:
+			Flight flightSGP = new Flight("SQ-525", 210, FlightClassEnum.ECONOMY);
+			FlightDataFile.saveFlightData(flightSGP);
 			break;
 		default:
 			System.err.println("Enter a valid option (1,2,3,4,5)");

@@ -1,6 +1,8 @@
 package com.flyhigh.model;
 
-public class Flight {
+import java.io.Serializable;
+// Marker interface
+public class Flight  implements Serializable{
 	private String flightCode;
 // string datatype
 private final String airlineName = "Singapore Airlines";
