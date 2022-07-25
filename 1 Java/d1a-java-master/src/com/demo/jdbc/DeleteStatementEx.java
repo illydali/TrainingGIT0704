@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 import java.sql.ResultSet;
 
-public class InsertStatementEx {
+public class DeleteStatementEx {
 	public static void main(String[] args) {
 
 		try {
@@ -19,19 +19,20 @@ public class InsertStatementEx {
 			Connection mySQLConnection =  DriverManager.getConnection("jdbc:mysql://localhost:3306/demodb","root","mysql");
 			// create statement
 			int productId = 2;
-			String productName = "Book";
-			float price = 50.50f;
-			// INSERT INTO PRODUCT VALUES (1, 'MAGAZINE',50.5);;
-	
-			String insertQueryString = " INSERT INTO PRODUCT VALUES (" + productId + ", '" + productName + "'," + price + ");" ;
-			System.err.println(insertQueryString);
+			String productName = "Novel";
+			float price = 55.50f;
+//			DELETE FROM PRODUCT WHERE PRODUCT_ID = 1;
+
+			String deleteQueryString = "DELETE FROM PRODUCT WHERE PRODUCT_ID = " + productId;
 			
-			Statement insertStatment = mySQLConnection.createStatement();
+			System.err.println(deleteQueryString);
+			
+			Statement updateStatment = mySQLConnection.createStatement();
 			// execute query + get results
-			int rowsAffected = insertStatment.executeUpdate(insertQueryString);
+			int rowsAffected = updateStatment.executeUpdate(deleteQueryString);
 //			iterate and display result
 			if(rowsAffected > 0) {
-				System.err.println("Successfully Inserted record!");
+				System.err.println("Successfully Deleted record(s)!");
 			}
 		} catch (ClassNotFoundException classNotFoundException) {
 			System.err.println("Driver could not be loaded. Pls check the jdbc library configuration");
