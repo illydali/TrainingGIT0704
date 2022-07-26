@@ -29,6 +29,20 @@ private static void displayAll() {
 			String lastNameString = actorResultset.getString("LAST_NAME");
 			System.err.println(actorId + "\t" + firstNameString + "\t" + lastNameString);
 		}
+		try {
+			if (mySQLConnection != null) {
+				mySQLConnection.close();
+			}
+		} catch (SQLException sqlException) {
+			System.err.println("Error closing connection : " + sqlException);
+		}
+		selectQueryString = "select title from film";
+//		Error establishing connection : java.sql.SQLException: No operations allowed after statement closed.
+		ResultSet filmResultSet = selectStatement.executeQuery(selectQueryString);
+//		iterate and display result
+		while(filmResultSet.next()) {
+			System.err.println(filmResultSet.getString("title"));
+		}
 	} catch (ClassNotFoundException classNotFoundException) {
 		System.err.println("Driver could not be loaded. Pls check the jdbc library configuration");
 	} catch (SQLException sqlException) {
