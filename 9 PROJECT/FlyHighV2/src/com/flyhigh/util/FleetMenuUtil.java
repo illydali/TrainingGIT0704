@@ -74,6 +74,22 @@ public enum FleetMenuUtil {
 				System.out.println("Flight Added to Fleet " + flightSGP);
 //				FlightDataFile.saveFlightData(flightSGP);
 				break;
+			case 3:
+				Flight updatedFlight = new Flight("SG-720", 308, FlightClassEnum.ECONOMY);
+				FlightDataHashMapStub.saveFlightData(updatedFlight);
+				System.out.println("Flight Updated to Fleet " + updatedFlight);
+//				FlightDataFile.saveFlightData(flightSGP);
+				break;
+			case 5:
+				String searchFlightCode = "SG-720";
+				boolean flightFound = FlightDataHashMapStub.getFlightDataMap().containsKey(searchFlightCode);
+				if(flightFound) {
+					System.err.println("Found flight " + searchFlightCode);
+				}
+				else {
+					System.err.println("Flight not found");
+				}
+				break;
 			case 4: 
 				System.out.println("Enter Flight Code to Remove : ");
 				String flightCode = scanner.nextLine();

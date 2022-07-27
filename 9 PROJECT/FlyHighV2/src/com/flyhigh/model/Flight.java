@@ -21,6 +21,30 @@ private FlightClassEnum flightClass;
 			return flightCode;
 		}
 
+	public int getSeatingCapacity() {
+		return seatingCapacity;
+	}
+
+	public void setSeatingCapacity(int seatingCapacity) {
+		this.seatingCapacity = seatingCapacity;
+	}
+
+	public FlightClassEnum getFlightClass() {
+		return flightClass;
+	}
+
+	public void setFlightClass(FlightClassEnum flightClass) {
+		this.flightClass = flightClass;
+	}
+
+	public String getAirlineName() {
+		return airlineName;
+	}
+
+	public void setFlightCode(String flightCode) {
+		this.flightCode = flightCode;
+	}
+
 	@Override
 	public String toString() {
 		return "Flight Code : " + flightCode + "\t Airlines Name : " + airlineName + "\t Seating Capacity : "
