@@ -17,6 +17,7 @@ public static void main(String[] args) {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			// establish connection with db url
 			// <protocol>:<sub-protocol>://<server>:<port>/DBNAME
+//			instance assigned to sqlConnection
 			sqlConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/SAKILA", "root", "mysql");
 			// create statement
 			String selectQueryString = "SELECT ACTOR_ID, FIRST_NAME, LAST_NAME FROM ACTOR";

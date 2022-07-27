@@ -1,6 +1,7 @@
 package com.flyhigh.ui;
 
 import com.flyhigh.model.Login;
+import com.flyhigh.repository.FlightDataHashMapStub;
 import com.flyhigh.util.FleetMenuUtil;
 
 public class FlyHighApp {
@@ -9,7 +10,8 @@ public class FlyHighApp {
 		Login login = new Login();
 		boolean loggedIn = login.authenticate("login", "password");
 		if (loggedIn) {
-			FleetMenuUtil.displayFleetMenu();
+//			FleetMenuUtil.displayFleetMenu();
+			FlightDataHashMapStub.loadSampleFlightData();
 			FleetMenuUtil.acceptFleetMenuChoice();
 		}
 	}

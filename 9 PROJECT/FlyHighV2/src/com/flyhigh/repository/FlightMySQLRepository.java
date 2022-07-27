@@ -16,7 +16,6 @@ public class FlightMySQLRepository {
 		try {
 			// create statement
 			String selectQueryString = "SELECT LOGIN_ID, PASSWORD FROM LOGIN WHERE LOGIN_ID = '" + loginId +"' AND PASSWORD = '" + password + "'";
-
 			ResultSet actorResultset = DBUtil.getResultSet(selectQueryString);
 //			iterate and display result
 			while(actorResultset.next()) {

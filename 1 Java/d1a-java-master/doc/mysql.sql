@@ -24,9 +24,39 @@ SELECT UPPER('test');
 SELECT * FROM PRODUCT WHERE PRODUCT_NAME LIKE '%GAZ%';
 SELECT * FROM PRODUCT WHERE PRODUCT_NAME LIKE 'PA%';
 SELECT * FROM PRODUCT order by product_id desc;
+select * from film;
 -- insert partial values
 INSERT INTO PRODUCT VALUES (5000, 'MAGAZINE',50.5);
 INSERT INTO PRODUCT (product_id,PRODUCT_NAME,PRICE) VALUES (5001, 'MAGAZINE',50.5);
 INSERT INTO PRODUCT (PRODUCT_NAME,PRICE,product_id) VALUES ('MAGAZINE',50.5,5002);
 INSERT INTO PRODUCT (product_id,PRODUCT_NAME) VALUES (5003, 'MAGAZINE');
 
+USE sakila;
+-- Subquery
+SELECT cust.customer_id, cust.first_name, cust.last_name
+FROM customer cust
+WHERE cust.customer_id IN
+(
+SELECT ren.customer_id
+FROM rental ren
+WHERE ren.inventory_id IN
+(
+SELECT inv.inventory_id
+FROM inventory inv
+WHERE inv.film_id IN
+(
+SELECT fl.film_id
+FROM film fl
+WHERE fl.film_id IN 
+(
+SELECT fc.film_id
+FROM film_category fc
+WHERE fc.category_id IN 
+(
+SELECT cat.category_id 
+FROM category cat
+WHERE cat.name = 'Action'
+)))))
+ORDER BY cust.customer_id, cust.first_name, cust.last_name;
+
+SELECT * FROM CUSTOMER;
