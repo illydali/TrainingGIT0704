@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 import java.sql.ResultSet;
 
-public class SelectStatementEx {
+public class SelectAndSearchStatementEx {
 	public static void main(String[] args) {
 
 //		displayAll();
