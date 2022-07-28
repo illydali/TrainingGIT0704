@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Catch Errors</title>
+</head>
+
+<body>
+    <script>
+        for (var i = 0; i < 3; i++) {
+            // alert(i);
+            console.log(i);
+        }
+        function displayHi() {
+            // alert("hi from function");
+            console.log("hi from function");
+        }
+        displayHi();
+
+        try {
+            displayHello();
+        } catch (exception) {
+            console.log("Exception : " + exception)
+        }
+
+    </script>
+    <button onclick="displayHi()">Click Me</button>
+</body>
+
+</html>
