@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Demo</title>
+    <!-- CSS : Cascading style sheet -->
+    <style>
+        /* element selector */
+    thead,tfoot {
+        background-color: #008080	;
+        color: white;
+    }
+    tbody {
+        background-color : aquamarine;
+        font-family: cursive;
+        font-size: larger;
+    }
+    table {
+        border : 5px solid;
+    }
+    td {
+        text-align: center;
+    }
+/* class selector */
+    .red {
+        color:red;
+    }
+    </style>
+</head>
+
+<body> 
+    <table style="width:100%;">
+        <thead>
+            <tr>
+                <th colspan="2">Programming Languages</th>
+                <!-- <th>Description</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+             <td class="red">Java</td>
+             <td>Programming Lang</td>
+            </tr>
+            <tr>
+                <td class="red">SQL</td>
+                <td>Database programming</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Languages : </th>
+            <td>2</td>
+        </tfoot>
+    </table>
+</body>
+</html>
