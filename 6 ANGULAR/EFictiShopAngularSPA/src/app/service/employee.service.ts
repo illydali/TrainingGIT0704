@@ -7,14 +7,18 @@ import { Employee } from '../model/employee.model';
 })
 export class EmployeeService {
   baseUrl: string = "http://localhost:3000/employees";
-  constructor(private httpClient : HttpClient) {
+  constructor(private httpClient: HttpClient) {
   }
   getEmployees() {
     // get
     return this.httpClient.get<Employee[]>(this.baseUrl);
   }
-  createEmployee(employee : Employee) {
-//post
-return this.httpClient.post(this.baseUrl,employee);
+  createEmployee(employee: Employee) {
+    //post
+    return this.httpClient.post(this.baseUrl, employee);
+  }
+  deleteEmployee(id:number)  {
+    //post
+    return this.httpClient.delete<Employee>(this.baseUrl + "/" + id);
   }
 }
