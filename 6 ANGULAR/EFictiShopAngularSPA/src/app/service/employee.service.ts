@@ -10,6 +10,11 @@ export class EmployeeService {
   constructor(private httpClient : HttpClient) {
   }
   getEmployees() {
+    // get
     return this.httpClient.get<Employee[]>(this.baseUrl);
+  }
+  createEmployee(employee : Employee) {
+//post
+return this.httpClient.post(this.baseUrl,employee);
   }
 }

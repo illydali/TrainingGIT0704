@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { ListEmpComponent } from './list-emp/list-emp.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
 import { SingleComponent } from './single.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -20,6 +21,7 @@ import { SingleComponent } from './single.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
