@@ -1,0 +1,26 @@
+<div class="container" style="background-color: beige;">
+<h4>Employee Details</h4>
+<div>
+   <div  class="table-striped" style="width:500px">
+      <table class="table">
+         <thead>
+            <tr>
+               <th>Id</th>
+               <th>Name</th>
+               <th>Salary</th>
+            </tr>
+         </thead>
+         <tbody>
+           <!-- angular takes care of DOM manipulation -->
+           <!-- structural directive -->
+           <tr *ngFor="let employee of employees">
+            <!-- {{}} string interpolation-->
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.salary}}</td>
+           </tr>
+         </tbody>
+      </table>
+   </div>   
+</div>
+</div>
