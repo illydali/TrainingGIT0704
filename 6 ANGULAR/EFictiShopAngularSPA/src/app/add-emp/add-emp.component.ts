@@ -15,10 +15,10 @@ export class AddEmpComponent implements OnInit {
   }
   ngOnInit(): void {
    this.addForm = this.formBuilder.group({
-    id : ['1'],
-    name:['Benjamin'],
-    salary:['50000']
-   })
+    id : [],
+    name:[],
+    salary:[]
+   });
   }
  saveEmployee() {
   console.log('Employee details sent to server..');
