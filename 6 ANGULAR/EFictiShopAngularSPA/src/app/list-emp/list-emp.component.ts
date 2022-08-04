@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Employee } from '../model/employee.model';
 import { EmployeeService } from '../service/employee.service';
 
@@ -12,7 +13,7 @@ export class ListEmpComponent implements OnInit {
   employees?: Employee[];
   employeeService: EmployeeService;
   // instantiates the employee service
-  constructor(employeeService: EmployeeService) {
+  constructor(employeeService: EmployeeService, private router:Router) {
     this.employeeService = employeeService;
   }
   // populates the data into the employees array.
@@ -29,5 +30,9 @@ export class ListEmpComponent implements OnInit {
         this.employees = this.employees.filter((employee) => employee != toDeleteEmployee )
       }
     )
+  }
+  updateEmployee(id :number) {
+    //navigate to update emp comp
+    this.router.navigate(['update',id]);
   }
 }

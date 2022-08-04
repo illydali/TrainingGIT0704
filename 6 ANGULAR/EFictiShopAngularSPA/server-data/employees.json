@@ -2,13 +2,13 @@
   "employees": [
     {
       "id": "5",
-      "name": "JumboJet",
-      "salary": "500000000"
+      "name": "JumboJets",
+      "salary": "5"
     },
     {
-      "id": "4",
-      "name": "Kate",
-      "salary": "5000"
+      "id": "6",
+      "name": "Nelson",
+      "salary": "500"
     }
   ]
 }
