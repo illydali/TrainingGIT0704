@@ -89,6 +89,7 @@ public class EmployeeController {
 		return htmlString;
 	}
 	@GetMapping("/employee")
+//	marshalled to json
 	public Employee getEmployee() {
 //		return "{id : 1}";
 		return new Employee(5, "JumboJets", 5);

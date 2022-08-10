@@ -11,7 +11,6 @@ import javax.persistence.Table;
 @Entity
 // Employee > EMPLOYEES
 @Table(name="EMPLOYEES")
-
 public class Employee {
 //	Uniqueness
 	@Id
