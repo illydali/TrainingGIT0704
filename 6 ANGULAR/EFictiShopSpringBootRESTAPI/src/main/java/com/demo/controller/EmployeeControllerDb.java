@@ -15,7 +15,7 @@ import com.demo.entity.Employee;
 import com.demo.repository.EmployeeRepository;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1")
 @CrossOrigin(origins = "http://localhost:4200")
 public class EmployeeControllerDb {
 // Dependency Injection (spring framework creates the Repository internally and injects the instance into your app
