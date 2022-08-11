@@ -1,12 +1,12 @@
 package com.demo.controller;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -54,4 +54,18 @@ public class EmployeeControllerDbRepo {
 		Employee savedEmployee = employeeRepository.save(employee);
 		return savedEmployee;
 	}
+	@DeleteMapping("/employees/{id}")
+	public Employee deleteEmployeeById(@PathVariable(value="id") Integer id) {
+		Employee existingEmployee = employeeRepository.findById(id).get();
+	    employeeRepository.delete(existingEmployee);
+		return existingEmployee;
+	}
+//	@DeleteMapping("/employees/{id}")
+//	public Map<String,Boolean> deleteEmployeeById(@PathVariable(value="id") Integer id) {
+//		Employee existingEmployee = employeeRepository.findById(id).get();
+//	    employeeRepository.delete(existingEmployee);
+//	    Map<String, Boolean> response = new HashMap<>();
+//	    response.put("deleted", Boolean.TRUE);
+//		return response;
+//	}
 }
