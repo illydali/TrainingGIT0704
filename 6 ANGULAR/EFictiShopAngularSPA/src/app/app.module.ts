@@ -10,6 +10,7 @@ import { UpdateEmpComponent } from './update-emp/update-emp.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ListEmpSbComponent } from './list-emp-sb/list-emp-sb.component';
+import { AddEmpSbComponent } from './add-emp-sb/add-emp-sb.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ListEmpSbComponent } from './list-emp-sb/list-emp-sb.component';
     SingleComponent,
     UpdateEmpComponent,
     ListEmpSbComponent,
+    AddEmpSbComponent,
   ],
   imports: [
     BrowserModule,
