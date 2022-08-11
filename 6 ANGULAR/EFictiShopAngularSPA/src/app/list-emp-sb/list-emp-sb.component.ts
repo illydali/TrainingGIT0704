@@ -10,20 +10,20 @@ import { EmployeeSbService } from '../service/employee-sb.service';
 })
 export class ListEmpSbComponent implements OnInit {
   employees?: Employee[];
-  employeeService: EmployeeSbService;
+  employeeSbService: EmployeeSbService;
   // instantiates the employee service
-  constructor(employeeService: EmployeeSbService, private router:Router) {
-    this.employeeService = employeeService;
+  constructor(employeeSbService: EmployeeSbService, private router:Router) {
+    this.employeeSbService = employeeSbService;
   }
   // populates the data into the employees array.
   ngOnInit(): void {
     //inintialize
-    this.employeeService.getEmployees().subscribe(
+    this.employeeSbService.getEmployees().subscribe(
       (employeeData) => { this.employees = employeeData }
     );
   }
   deleteEmployee(toDeleteEmployee : Employee) : void {
-    this.employeeService.deleteEmployee(toDeleteEmployee.id).subscribe(
+    this.employeeSbService.deleteEmployee(toDeleteEmployee.id).subscribe(
       (data)=> {
         // remove from array
         this.employees = this.employees.filter((employee) => employee != toDeleteEmployee )
@@ -32,6 +32,6 @@ export class ListEmpSbComponent implements OnInit {
   }
   updateEmployee(id :number) {
     //navigate to update emp comp
-    this.router.navigate(['update',id]);
+    this.router.navigate(['update-sb',id]);
   }
 }

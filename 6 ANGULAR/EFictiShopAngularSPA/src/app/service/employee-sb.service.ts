@@ -12,11 +12,11 @@ export class EmployeeSbService {
   }
   getEmployees() {
     // get
-    return this.httpClient.get<Employee[]>(this.baseUrl);
+    return this.httpClient.get<Employee[]>(this.baseUrl);;
   }
   getEmployeeById(id: number) {
     //get
-    return this.httpClient.get<Employee>(this.baseUrl + "/" + id);
+    return this.httpClient.get<Employee>(this.baseUrl + "/" + id);;
   }
   createEmployee(employee: Employee) {
     //post : new emp

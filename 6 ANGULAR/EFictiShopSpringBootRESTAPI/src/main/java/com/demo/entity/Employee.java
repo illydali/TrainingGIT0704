@@ -18,7 +18,7 @@ public class Employee {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 //	id > EMPLOYEE_ID
 	@Column(name="EMPLOYEE_ID")
-	private int id;
+	private Integer id;
 	@Column(name="FIRST_NAME", nullable = false)
 	private String name;
 	private int salary;
