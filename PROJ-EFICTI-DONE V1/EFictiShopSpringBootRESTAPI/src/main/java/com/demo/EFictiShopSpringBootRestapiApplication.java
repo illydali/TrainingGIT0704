@@ -10,4 +10,5 @@ public class EFictiShopSpringBootRestapiApplication {
 		System.err.println("WELCOME TO SPRINGBOOT APPLICATION!");
 		SpringApplication.run(EFictiShopSpringBootRestapiApplication.class, args);
 	}
+
 }

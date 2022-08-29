@@ -4,7 +4,6 @@ import { AddEmpSbComponent } from "./add-emp-sb/add-emp-sb.component";
 import { AddEmpComponent } from "./add-emp/add-emp.component";
 import { ListEmpSbComponent } from "./list-emp-sb/list-emp-sb.component";
 import { ListEmpComponent } from "./list-emp/list-emp.component";
-import { LoginSbComponent } from "./login-sb/login-sb.component";
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
 import { AuthGuardService } from "./service/auth-guard.service";
@@ -15,8 +14,7 @@ import { UpdateEmpComponent } from "./update-emp/update-emp.component";
 const routes: Routes = [
     // localhost:4200 (localhost:4200/employees)
     // {path : '', redirectTo: 'login', pathMatch: 'full'},
-    {path: '', component:LoginSbComponent},
-    {path: 'login-sb', component:LoginSbComponent},
+    {path: '', component:LoginComponent},
     {path: 'login', component:LoginComponent},
     {path: 'register', component:RegisterComponent},
     // employees = load ListEmpComponent
@@ -26,7 +24,7 @@ const routes: Routes = [
     {path: 'add-sb', component:AddEmpSbComponent, canActivate:[AuthGuardService]},
     {path: 'update/:id', component:UpdateEmpComponent, canActivate:[AuthGuardService]},
     {path: 'update-sb/:id', component:UpdateEmpSbComponent, canActivate:[AuthGuardService]},
-    {path: '**', component:LoginSbComponent},
+    {path: '**', component:LoginComponent},
 ]
 
 @NgModule({

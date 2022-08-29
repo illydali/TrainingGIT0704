@@ -13,7 +13,6 @@ import { ListEmpSbComponent } from './list-emp-sb/list-emp-sb.component';
 import { AddEmpSbComponent } from './add-emp-sb/add-emp-sb.component';
 import { UpdateEmpSbComponent } from './update-emp-sb/update-emp-sb.component';
 import { RegisterComponent } from './register/register.component';
-import { LoginSbComponent } from './login-sb/login-sb.component';
 
 
 @NgModule({
@@ -28,7 +27,6 @@ import { LoginSbComponent } from './login-sb/login-sb.component';
     AddEmpSbComponent,
     UpdateEmpSbComponent,
     RegisterComponent,
-    LoginSbComponent,
 
   ],
   imports: [
