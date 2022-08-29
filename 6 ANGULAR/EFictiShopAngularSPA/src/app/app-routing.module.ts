@@ -5,6 +5,7 @@ import { AddEmpComponent } from "./add-emp/add-emp.component";
 import { ListEmpSbComponent } from "./list-emp-sb/list-emp-sb.component";
 import { ListEmpComponent } from "./list-emp/list-emp.component";
 import { LoginComponent } from "./login/login.component";
+import { RegisterComponent } from "./register/register.component";
 import { AuthGuardService } from "./service/auth-guard.service";
 import { UpdateEmpSbComponent } from "./update-emp-sb/update-emp-sb.component";
 import { UpdateEmpComponent } from "./update-emp/update-emp.component";
@@ -15,6 +16,7 @@ const routes: Routes = [
     // {path : '', redirectTo: 'login', pathMatch: 'full'},
     {path: '', component:LoginComponent},
     {path: 'login', component:LoginComponent},
+    {path: 'register', component:RegisterComponent},
     // employees = load ListEmpComponent
     {path: 'employees', component:ListEmpComponent, canActivate:[AuthGuardService]},
     {path: 'employees-sb', component:ListEmpSbComponent, canActivate:[AuthGuardService]},

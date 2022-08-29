@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ListEmpSbComponent } from './list-emp-sb/list-emp-sb.component';
 import { AddEmpSbComponent } from './add-emp-sb/add-emp-sb.component';
 import { UpdateEmpSbComponent } from './update-emp-sb/update-emp-sb.component';
+import { RegisterComponent } from './register/register.component';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { UpdateEmpSbComponent } from './update-emp-sb/update-emp-sb.component';
     ListEmpSbComponent,
     AddEmpSbComponent,
     UpdateEmpSbComponent,
+    RegisterComponent,
+
   ],
   imports: [
     BrowserModule,
